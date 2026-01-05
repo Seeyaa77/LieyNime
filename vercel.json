@@ -2,31 +2,5 @@
   "version": 2,
   "buildCommand": "",
   "installCommand": "",
-  "functions": {
-    "*.php": {
-      "runtime": "php-8.2"
-    }
-  },
-  "routes": [
-    {
-      "src": "/(.*\\.php)$",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*\\.js)$",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.*\\.css)$",
-      "dest": "/$1"
-    },
-    {
-      "src": "/(.+)",
-      "dest": "/index.php"
-    },
-    {
-      "src": "/",
-      "dest": "/index.php"
-    }
-  ]
+  "outputDirectory": "."
 }
