@@ -2,9 +2,6 @@
   "version": 2,
   "buildCommand": "",
   "installCommand": "",
-  "env": {
-    "PHP_VERSION": "8.2"
-  },
   "functions": {
     "*.php": {
       "runtime": "php-8.2"
