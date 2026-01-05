@@ -1,0 +1,16 @@
+{
+  "name": "lieynime",
+  "version": "1.0.0",
+  "description": "Website Streaming Anime dengan UI Dark Mode Modern",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": ["anime", "streaming", "sansekai"],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  }
+}
