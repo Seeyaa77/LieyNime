@@ -1,21 +1,33 @@
 {
   "name": "lieynime",
-  "version": "1.0.0",
-  "description": "Website Streaming Anime dengan PHP dan API SanSekai",
-  "main": "index.php",
-  "engines": {
-    "node": "24.x"
+  "version": 2,
+  "framework": "php",
+  "buildCommand": "",
+  "devCommand": "php -S localhost:3000",
+  "installCommand": "",
+  "env": {
+    "PHP_VERSION": "8.2"
   },
-  "scripts": {
-    "dev": "php -S localhost:3000",
-    "build": "echo 'PHP project - no build needed'"
-  },
-  "keywords": [
-    "anime",
-    "streaming",
-    "sansekai"
-  ],
-  "author": "LieYNime",
-  "license": "MIT",
-  "dependencies": {}
+  "routes": [
+    {
+      "src": "/(.*\\.php)$",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*\\.js)$",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*\\.css)$",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.+)",
+      "dest": "/index.php"
+    },
+    {
+      "src": "/",
+      "dest": "/index.php"
+    }
+  ]
 }
