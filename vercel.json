@@ -1,12 +1,14 @@
 {
-  "name": "lieynime",
   "version": 2,
-  "framework": "php",
   "buildCommand": "",
-  "devCommand": "php -S localhost:3000",
   "installCommand": "",
   "env": {
     "PHP_VERSION": "8.2"
+  },
+  "functions": {
+    "*.php": {
+      "runtime": "php-8.2"
+    }
   },
   "routes": [
     {
